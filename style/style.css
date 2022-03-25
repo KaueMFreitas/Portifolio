@@ -8,6 +8,7 @@
 :root {
     --cor1: #16232E;
     --cor2: #164C45;
+    --cor6: #2D1F52;
     --cor3: #CC8D1A;
     --cor4: #E3C75F;
     --cor5: #BDA523;
@@ -49,6 +50,19 @@ nav {
     width: 100%;
     height: auto;
 }
+
+.item-nav {
+    background-color: black;
+    height: 450px;
+    width: 70vmin;
+
+    border-radius: 30px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
 nav p {
     font-size: 1vw;
     margin-bottom: 5px;
@@ -159,11 +173,11 @@ section#sobre {
     transition: all 0.5s ease-in-out;
 }
 
-#hiiden{
+#hidden{
     width: auto;
     height: auto;
     opacity: 0;
-    margin-top: 50px;
+    margin-top: 30px;
     font-size: 1.5em;
     color: white;
     transition: all 0.5s ease-in-out;
@@ -175,14 +189,14 @@ section#sobre {
 
 .caixa:hover h2{
     font-size: 1.6em;
-    margin-top: 100px;
+    margin-top: 10%;
     transition: 0.7s;
 }
 
-.caixa:hover #hiiden{
-    margin-top: calc(50% - 100px);
+.caixa:hover #hidden{
+    margin-top: calc(40% - 100px);
     opacity: 1;
-    transition: 0.5s;
+    transition: 0.9s;
 }
 
 section#tecnologias {
@@ -195,15 +209,39 @@ section#tecnologias {
     color: var(--cor1);
 }
 
+section#habilidades {
+    background-color: var(--cor6);
+}
+
+
 section#cursos {
     color: var(--cor5);
+}
+
+section#redes {
+    padding-bottom: 60vh;
+    background-color: #E3C75F;
+
+    align-items: center;
+}
+
+section#redes img {
+    width: 3vmin;
+    margin-right: 10px;
+}
+section#redes p{
+    text-align: center;
+}
+section#redes a{
+    color: var(--cor4);
+    text-decoration: none;
 }
 
 footer#contato {
     background-image: linear-gradient(to top, var(--cor4) 10%, var(--cor5) 65%, var(--cor1) 80%);
 
     padding-top: 300px; 
-    padding-bottom: 300px;
+    padding-bottom: 200px;
 
     font-size: 6vw;
     text-shadow: var(--cortono);

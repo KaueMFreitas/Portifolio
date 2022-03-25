@@ -36,10 +36,6 @@ html, body {
     scroll-behavior: smooth;
 }
 
-body {
-    background-color: var(--cor1);
-}
-
 h1 {
     font-size: 2em;
     margin-bottom: 40px;
@@ -88,28 +84,31 @@ nav.container.iten-nav{
 header  {
     box-shadow: inset 5px 5px 15px rgb(0, 0, 0);
     
-    background-color: var(--cor1);
-    background-image: url(/imagem/wallpaper1.jpg);
-    background-attachment: fixed;
-    background-position: center center;
+    background-color: black;
+    background-image: url(https://i.pinimg.com/736x/a3/c4/94/a3c494dd02285b65db8a538926967074--minimalist-web-design-web-design-examples.jpg);
+    
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
-    max-height: 50vw;
+    height: 60vh;
     width: 100%;
     text-align: center;
 }
 
 header div.container {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 header img { 
-    padding-top: 2vw;
+    padding-top: 15vh;
     width: 25vmin;
     padding-left: 10px;
     margin-left: auto;
 }
 header p {
+    padding-top: 15vh;
     width: auto;
     padding-left: 10px;
     margin-right: auto;

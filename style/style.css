@@ -1,0 +1,216 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor1: #16232E;
+    --cor2: #164C45;
+    --cor3: #CC8D1A;
+    --cor4: #E3C75F;
+    --cor5: #BDA523;
+
+    --cortono: 1px 0 black, 0 1px black, 1px 0 black, 0 -1px 0px black;
+    --cortono2: 1px 0 white, 0 1px white, 1px 0 white, 0 -1px 0px white;
+}
+
+.container {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    align-items: center;
+
+    padding-top: 8VW;
+}
+
+html, body {
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    
+    font-size: 1.2em;
+
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--cor1);
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+nav {
+    position: fixed;
+
+    background-color: var(--cor1);
+    
+    width: 100%;
+    height: auto;
+}
+nav p {
+    font-size: 1vw;
+    margin-bottom: 5px;
+}
+nav a {
+    font-size: 2vh;
+
+    margin: 10px;
+
+    bottom: auto;
+    color: var(--cor4);
+    text-decoration: none;
+
+    text-shadow: var(--cortono);
+}
+nav a:hover {
+    transition: 0.4s;
+    
+    text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.534);
+    color: brown;
+}
+
+nav.container {
+    padding: 20px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+nav.container.iten-nav{
+    margin: 20px;
+}
+
+header  {
+    box-shadow: inset 5px 5px 15px rgb(0, 0, 0);
+    
+    background-color: var(--cor1);
+    background-image: url(/imagem/wallpaper1.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+
+    max-height: 50vw;
+    width: 100%;
+    text-align: center;
+}
+
+header div.container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+header img { 
+    padding-top: 2vw;
+    width: 25vmin;
+    padding-left: 10px;
+    margin-left: auto;
+}
+header p {
+    width: auto;
+    padding-left: 10px;
+    margin-right: auto;
+    
+    color: rgb(255, 255, 255);
+    font-size: 6vmin;
+    text-shadow: var(--cortono), 3px 3px 10px rgba(0, 0, 0, 0.288);
+}
+
+section {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    background-color: var(--cor1);
+    height: auto;
+
+    text-align: center;
+    color: var(--cor5);
+    text-shadow: var(--cortono);
+}
+
+section#sobre {
+    padding-top: 300px;
+    padding-bottom: 300px;
+    margin-top: auto;
+    
+    text-shadow: var(--cortono);
+}
+
+.caixa {
+    background-color: black;
+    height: 450px;
+    width: 70vmin;
+
+    border-radius: 30px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.caixa h2 {
+    margin-top: 50%;
+    font-size: 2em;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+#hiiden{
+    width: auto;
+    height: auto;
+    opacity: 0;
+    margin-top: 50px;
+    font-size: 1.5em;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+.caixa:hover {
+    box-shadow: inset 0px -5px 10px rgba(255, 255, 255, 0.342);
+}
+
+.caixa:hover h2{
+    font-size: 1.6em;
+    margin-top: 100px;
+    transition: 0.7s;
+}
+
+.caixa:hover #hiiden{
+    margin-top: calc(50% - 100px);
+    opacity: 1;
+    transition: 0.5s;
+}
+
+section#tecnologias {
+    padding-bottom: 50px;
+    padding-top: 50px;
+    height: auto;
+
+    text-align: center;
+    background-color: var(--cor3);
+    color: var(--cor1);
+}
+
+section#cursos {
+    color: var(--cor5);
+}
+
+footer#contato {
+    background-image: linear-gradient(to top, var(--cor4) 10%, var(--cor5) 65%, var(--cor1) 80%);
+
+    padding-top: 300px; 
+    padding-bottom: 300px;
+
+    font-size: 1.5em;
+    text-shadow: var(--cortono);
+    color: rgb(255, 198, 74);
+    text-align: center;
+}
+footer h1{
+    padding-top: 30px;
+}
